@@ -92,7 +92,7 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
             else:
                 # ❌ Не подписан
                 await query.message.reply_text(
-                    "Увы, я не нашла Вас в числе подписчиков моего канала"
+                    "Увы, я не нашла Вас в числе подписчиков моего канала. Попробуйте еще раз."
                 )
 
         except Exception as e:
