@@ -4,8 +4,8 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, CallbackQueryHandler, ContextTypes
 
 BOT_TOKEN = os.getenv("BOT_TOKEN")
-CHANNEL_USERNAME = os.getenv("CHANNEL_USERNAME", "@teatime_english_with_larisa")
-FILE_PATH = "HelloWorld.pdf"  # файл должен быть в той же папке
+CHANNEL_USERNAME = os.getenv("CHANNEL_USERNAME", "@your_channel")
+FILE_PATH = "gift.pdf"  # файл должен быть в той же папке
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -53,5 +53,4 @@ def main():
     app.run_polling()
 
 if __name__ == "__main__":
-
     main()
