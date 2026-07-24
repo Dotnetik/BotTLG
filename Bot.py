@@ -62,7 +62,7 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.message.reply_text(
             "И последнее - проверьте подписаны ли вы на мой канал "
-            "«За чашкой английского», в котором каждый день выходит "
+            "«За чашкой английского» @teatime_english_with_larisa, в котором каждый день выходит "
             "самая полезная информация для вашего английского: "
             "лексика 2026 года, свежие статьи, челленджи, видео и подкасты",
             reply_markup=reply_markup,
